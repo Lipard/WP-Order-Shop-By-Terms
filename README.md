@@ -7,7 +7,8 @@ Si queremos que este código se ejecute en en otras partes de la web que no sean
 
 ```php
 
-if (is_search() && is_shop() && !is_admin()){
+//Por ejemplo si queremos que también se aplique estos cambios al buscador añadimos is_search()
+if ((is_search() || is_shop()) && !is_admin()){
 
     //Aqui el resto de código
 
